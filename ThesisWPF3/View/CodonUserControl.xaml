@@ -1,0 +1,1456 @@
+﻿<UserControl
+    x:Class="ThesisWPF3.View.CodonUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ThesisWPF3.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <Grid Margin="24,8,120,8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="30" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+
+        <!--  1 Column  -->
+        <!--  1 ROW  -->
+
+        <Border
+            Grid.Row="2"
+            Grid.Column="2"
+            BorderBrush="Gray"
+            BorderThickness="1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UUUxleftxPhe"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UUUxrightxPhe"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UUU Phenylalanin (Phe)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UUCxleftxPhe"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UUCxrightxPhe"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UUC Phenylalanin (Phe)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UUAxleftxLeu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UUAxrightxLeu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UUA Leucin (Leu)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UUGxleftxLeu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UUGxrightxLeu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UUG Leucin (Leu)" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+
+        <!--  2 ROW  -->
+        <Border
+            Grid.Row="3"
+            Grid.Column="2"
+            BorderBrush="Gray"
+            BorderThickness="1,0,1,1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CUUxleftxLeu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CUUxrightxLeu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CUU Leucin (Leu)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CUCxleftxLeu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CUCxrightxLeu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CUC Leucin (Leu)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CUAxleftxLeu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CUAxrightxLeu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CUA Leucin (Leu)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CUGxleftxLeu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Foreground="Red"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CUGxrightxLeu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CUG Leucin (Leu)" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+
+        <!--  3. Row  -->
+        <Border
+            Grid.Row="4"
+            Grid.Column="2"
+            BorderBrush="Gray"
+            BorderThickness="1,0,1,1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="AUUxleftxIle"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="AUUxrightxIle"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="AUU Isoleucin (Ile)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="AUCxleftxIle"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="AUCxrightxIle"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="AUC Isoleucin (Ile)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="AUAxleftxIle"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="AUAxrightxIle"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="AUA Isoleucin (Ile)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="AUGxleftxIle"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Foreground="Red"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="AUGxrightxIle"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="AUG Isoleucin (Ile)" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!--  4  ROW  -->
+        <Border
+            Grid.Row="5"
+            Grid.Column="2"
+            BorderBrush="Gray"
+            BorderThickness="1,0,1,1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GUUxleftxVal"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GUUxrightxVal"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GUU Valin (Val)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GUCxleftxVal"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GUCxrightxVal"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GUC Valin (Val)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GUAxleftxVal"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GUAxrightxVal"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GUA Valin (Val)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GUGxleftxVal"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Foreground="Red"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GUGxrightxVal"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GUG Valin (Val)" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!--  2 Column  -->
+        <!--  1 ROW  -->
+        <Border
+            Grid.Row="2"
+            Grid.Column="3"
+            BorderBrush="Gray"
+            BorderThickness="0,1,1,1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UCUxleftxSer"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UCUxrightxSer"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UCU Serin (Ser)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UCCxleftxSer"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UCCxrightxSer"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UCC Serin (Ser)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UCAxleftxSer"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UCAxrightxSer"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UCA Serin (Ser)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UCGxleftxSer"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UCGxrightxSer"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UCG Serin (Ser)" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+
+        <!--  2 ROW  -->
+        <Border
+            Grid.Row="3"
+            Grid.Column="3"
+            BorderBrush="Gray"
+            BorderThickness="0,0,1,1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CCUxleftxPro"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CCUxrightxPro"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CCU Prolin (Pro)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CCCxleftxPro"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CCCxrightxPro"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CCC Prolin (Pro)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CCAxleftxPro"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CCAxrightxPro"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CCA Prolin (Pro)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CCGxleftxPro"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Foreground="Red"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CCGxrightxPro"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CCG Prolin (Pro)" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+
+        <!--  3. Row  -->
+        <Border
+            Grid.Row="4"
+            Grid.Column="3"
+            BorderBrush="Gray"
+            BorderThickness="0,0,1,1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="ACUxleftxThr"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="ACUxrightxThr"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="ACU Threonin (Thr)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="ACCxleftxThr"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="ACCxrightxThr"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="ACC Threonin (Thr)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="ACAxleftxThr"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="ACAxrightxThr"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="ACA Threonin (Thr)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="ACGxleftxThr"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Foreground="Red"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="ACGxrightxThr"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="ACG Threonin (Thr)" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!--  4  ROW  -->
+        <Border
+            Grid.Row="5"
+            Grid.Column="3"
+            BorderBrush="Gray"
+            BorderThickness="0,0,1,1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GCUxleftxAla"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GCUxrightxAla"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GCU Alanin (Ala)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GCCxleftxAla"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GCCxrightxAla"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GCC Alanin (Ala)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GCAxleftxAla"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GCAxrightxAla"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GCA Alanin (Ala)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GCGxleftxAla"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Foreground="Red"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GCGxrightxAla"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GCG Alanin (Ala)" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!--  3 Column  -->
+        <!--  1 ROW  -->
+        <Border
+            Grid.Row="2"
+            Grid.Column="4"
+            BorderBrush="Gray"
+            BorderThickness="0,1,1,1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UAUxleftxTyr"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UAUxrightxTyr"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UAU Tyrosin (Tyr)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UACxleftxTyr"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UACxrightxTyr"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UAC Tyrosin (Tyr)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UAAxleftxStop"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UAAxrightxStop"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UAA Stop" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UAGxleftxStop"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UAGxrightxStop"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UCG Stop" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+
+        <!--  2 ROW  -->
+        <Border
+            Grid.Row="3"
+            Grid.Column="4"
+            BorderBrush="Gray"
+            BorderThickness="0,0,1,1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CAUxleftxHis"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CAUxrightxHis"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CAU Histidin (His)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CACxleftxHis"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CACxrightxHis"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CAC Histidin (His)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CAAxleftxGln"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CAAxrightxGln"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CAA Glutamin (Gln)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CAGxleftxGln"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Foreground="Red"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CAGxrightxGln"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CAG Glutamin (Gln)" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+
+        <!--  3. Row  -->
+        <Border
+            Grid.Row="4"
+            Grid.Column="4"
+            BorderBrush="Gray"
+            BorderThickness="0,0,1,1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="AAUxleftxAsn"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="AAUxrightxAsn"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="AAU Asparagin (Asn)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="AACxleftxAsn"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="AACxrightxAsn"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="AAC Asparagin (Asn)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="AAAxleftxLys"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="AAAxrightxLys"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="AAA Lysin (Lys)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="AAGxleftxLys"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Foreground="Red"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="AAGxrightxLys"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="AAG Lysin (Lys)" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!--  4  ROW  -->
+        <Border
+            Grid.Row="5"
+            Grid.Column="4"
+            BorderBrush="Gray"
+            BorderThickness="0,0,1,1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GAUxleftxAsp"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GAUxrightxAsp"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GAU Asparaginsäure (Asp)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GACxleftxAsp"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GACxrightxAsp"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GAC Asparaginsäure (Asp)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GAAxleftxGlu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GAAxrightxGlu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GAA Glutaminsäure (Glu)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GAGxleftxGlu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Foreground="Red"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GAGxrightxGlu"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GAG Glutaminsäure (Glu)" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!--  4 Column  -->
+        <!--  1 ROW  -->
+        <Border
+            Grid.Row="2"
+            Grid.Column="5"
+            BorderBrush="Gray"
+            BorderThickness="0,1,1,1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UGUxleftxCys"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UGUxrightxCys"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UGU Cystein (Cys)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UGCxleftxCys"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UGCxrightxCys"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UGC Cystein (Cys)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UGAxleftxStop"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UGAxrightxStop"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UGA Stop" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="UGGxleftxTrp"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="UGGxrightxTrp"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="UGG Tryptophan (Trp)" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+
+        <!--  2 ROW  -->
+        <Border
+            Grid.Row="3"
+            Grid.Column="5"
+            BorderBrush="Gray"
+            BorderThickness="0,0,1,1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CGUxleftxArg"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CGUxrightxArg"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CGU Arginin (Arg)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CGCxleftxArg"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CGCxrightxArg"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CGC Arginin (Arg)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CGAxleftxArg"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CGAxrightxArg"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CGA Arginin (Arg)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="CGGxleftxArg"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Foreground="Red"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="CGGxrightxArg"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="CGG Arginin (Arg)" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+
+        <!--  3. Row  -->
+        <Border
+            Grid.Row="4"
+            Grid.Column="5"
+            BorderBrush="Gray"
+            BorderThickness="0,0,1,1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="AGUxleftxSer"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="AGUxrightxSer"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="AGU Serin (Ser)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="AGCxleftxSer"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="AGCxrightxSer"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="AGC Serin (Ser)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="AGAxleftxArg"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="AGAxrightxArg"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="AGA Arginin (Arg)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="AGGxleftxArg"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Foreground="Red"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="AGGxrightxArg"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="AGG Arginin (Arg)" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!--  4  ROW  -->
+        <Border
+            Grid.Row="5"
+            Grid.Column="5"
+            BorderBrush="Gray"
+            BorderThickness="0,0,1,1">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GGUxleftxGly"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GGUxrightxGly"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GGU Glycin (Gly)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GGCxleftxGly"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GGCxrightxGly"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GGC Glycin (Gly)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GGAxleftxGly"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GGAxrightxGly"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GGA Glycin (Gly)" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <CheckBox
+                        x:Name="GGGxleftxGly"
+                        Margin="2,0,0,0"
+                        BorderBrush="Red"
+                        Checked="CheckBox_Checked"
+                        Foreground="Red"
+                        Unchecked="CheckBox_Unchecked" />
+                    <CheckBox
+                        x:Name="GGGxrightxGly"
+                        Margin="2,0,0,0"
+                        BorderBrush="Blue"
+                        Checked="CheckBox_Checked"
+                        Unchecked="CheckBox_Unchecked" />
+                    <TextBlock Margin="8,0,0,0" Text="GGG Glycin (Gly)" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Border
+            Grid.Row="2"
+            Grid.RowSpan="4"
+            Grid.Column="0"
+            VerticalAlignment="Stretch"
+            Background="LightGray"
+            BorderBrush="Gray"
+            BorderThickness="1">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="1. Base" />
+        </Border>
+        <Border
+            Grid.Row="0"
+            Grid.Column="2"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Stretch"
+            Background="LightGray"
+            BorderBrush="Gray"
+            BorderThickness="1">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="2. Base" />
+        </Border>
+
+        <Border
+            Grid.Row="2"
+            Grid.Column="1"
+            HorizontalAlignment="Stretch"
+            Background="LightGray"
+            BorderBrush="Gray"
+            BorderThickness="0,1,0,1">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="U" />
+        </Border>
+        <Border
+            Grid.Row="3"
+            Grid.Column="1"
+            HorizontalAlignment="Stretch"
+            Background="LightGray"
+            BorderBrush="Gray"
+            BorderThickness="0,0,0,1">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="C" />
+        </Border>
+        <Border
+            Grid.Row="4"
+            Grid.Column="1"
+            HorizontalAlignment="Stretch"
+            Background="LightGray"
+            BorderBrush="Gray"
+            BorderThickness="0,0,0,1">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="A" />
+        </Border>
+        <Border
+            Grid.Row="5"
+            Grid.Column="1"
+            HorizontalAlignment="Stretch"
+            Background="LightGray"
+            BorderBrush="Gray"
+            BorderThickness="0,0,0,1">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="G" />
+        </Border>
+
+        <Border
+            Grid.Row="1"
+            Grid.Column="2"
+            VerticalAlignment="Stretch"
+            Background="LightGray"
+            BorderBrush="Gray"
+            BorderThickness="1,0,1,0">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="U" />
+        </Border>
+        <Border
+            Grid.Row="1"
+            Grid.Column="3"
+            VerticalAlignment="Stretch"
+            Background="LightGray"
+            BorderBrush="Gray"
+            BorderThickness="0,0,1,0">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="C" />
+        </Border>
+        <Border
+            Grid.Row="1"
+            Grid.Column="4"
+            VerticalAlignment="Stretch"
+            Background="LightGray"
+            BorderBrush="Gray"
+            BorderThickness="0,0,1,0">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="A" />
+        </Border>
+        <Border
+            Grid.Row="1"
+            Grid.Column="5"
+            VerticalAlignment="Stretch"
+            Background="LightGray"
+            BorderBrush="Gray"
+            BorderThickness="0,0,1,0">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="G" />
+        </Border>
+    </Grid>
+</UserControl>
