@@ -57,9 +57,9 @@
     <Content Include="Res\Codes.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ThesisWPF3\ThesisWPF.csproj">
+    <ProjectReference Include="..\ThesisWPF3\UICodeChecker.csproj">
       <Project>{cb031833-5870-4c64-b522-1e645e472773}</Project>
-      <Name>ThesisWPF</Name>
+      <Name>UICodeChecker</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

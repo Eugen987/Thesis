@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThesisWPF", "ThesisWPF3\ThesisWPF.csproj", "{CB031833-5870-4C64-B522-1E645E472773}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UICodeChecker", "ThesisWPF3\UICodeChecker.csproj", "{CB031833-5870-4C64-B522-1E645E472773}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChecker", "CodeChecker\CodeChecker.csproj", "{DF5F465C-B8C6-4546-83E4-E696EDE335F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCodeChecker", "CodeChecker\ConsoleCodeChecker.csproj", "{DF5F465C-B8C6-4546-83E4-E696EDE335F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
