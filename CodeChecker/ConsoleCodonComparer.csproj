@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{DF5F465C-B8C6-4546-83E4-E696EDE335F0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CodeChecker</RootNamespace>
-    <AssemblyName>CodeChecker</AssemblyName>
+    <RootNamespace>ConsoleApplication</RootNamespace>
+    <AssemblyName>ConsoleApplication</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -57,9 +57,9 @@
     <Content Include="Res\Codes.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ThesisWPF3\UICodeChecker.csproj">
+    <ProjectReference Include="..\ThesisWPF3\CodonComparer.csproj">
       <Project>{cb031833-5870-4c64-b522-1e645e472773}</Project>
-      <Name>UICodeChecker</Name>
+      <Name>CodonComparer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

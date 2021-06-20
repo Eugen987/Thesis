@@ -1,6 +1,7 @@
 ﻿using NanoByte.SatSolver;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -21,8 +22,8 @@ namespace CodeChecker
             var solver = new Solver<string>();
 
             string filePath = dirPath + @"\Res\Codes.txt";
-            // Read the file and display it line by line.
             System.IO.StreamReader file = new System.IO.StreamReader(filePath);
+            Stopwatch stopwatch = new Stopwatch();
 
             var outputLines = new List<string>();
 
@@ -61,6 +62,10 @@ namespace CodeChecker
             var vailidGraphCount = graphList.Where(x => x.Value != null).Count();
             outputLines.Append(vailidGraphCount + " Graphen sind valide.");
 
+            TimeSpan minElapesedTime = TimeSpan.MaxValue;
+            TimeSpan maxElapesedTime = TimeSpan.Zero;
+            TimeSpan overallElapesedTime = TimeSpan.Zero;
+
             for (int i = 1; i < graphList.Count; i++)
             {
                 if (graphList.Where(x => x.Key == i).FirstOrDefault().Value != null)
@@ -69,8 +74,16 @@ namespace CodeChecker
                     {
                         if (graphList.Where(x => x.Key == j).FirstOrDefault().Value != null)
                         {
+                            stopwatch.Start();
                             var formula = parseService.GraphsToFormula(graphList.Where(x => x.Key == j).FirstOrDefault().Value, graphList.Where(x => x.Key == i).FirstOrDefault().Value);
                             var result = solver.IsSatisfiable(formula);
+                            stopwatch.Stop();
+
+                            minElapesedTime = (minElapesedTime < stopwatch.Elapsed) ? minElapesedTime : stopwatch.Elapsed;
+                            maxElapesedTime = (maxElapesedTime > stopwatch.Elapsed) ? maxElapesedTime : stopwatch.Elapsed;
+                            overallElapesedTime += overallElapesedTime;
+                            stopwatch.Reset();
+
                             if (result == true)
                             {
                                 outputLines.Add((j + 1) + " ist isomorph zu " + (i + 1) + "---------------------------------");
@@ -83,6 +96,10 @@ namespace CodeChecker
                     }
                 }
             }
+
+            outputLines.Add("Min. Berechnungszeit: " + minElapesedTime.TotalSeconds);
+            outputLines.Add("Max. Berechnungszeit: " + maxElapesedTime.TotalSeconds);
+            outputLines.Add("Avg. Berechnungszeit: " + overallElapesedTime.TotalSeconds / vailidGraphCount);
             File.WriteAllLines("Output.txt", outputLines.ToArray());
             Console.WriteLine("done");
             Console.ReadLine();
