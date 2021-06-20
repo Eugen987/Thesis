@@ -47,11 +47,13 @@ namespace CodeChecker
                     outputLine += "wird/werden zu häufig codiert.";
                     graphList.Add(new KeyValuePair<int, Graph>(counter, null));
                     outputLines.Add(outputLine);
+                    Console.WriteLine(outputLine);
                 }
                 else
                 {
-                    graphList.Add(new KeyValuePair<int, Graph>(counter, graph));
+                   / graphList.Add(new KeyValuePair<int, Graph>(counter, graph));
                     outputLines.Add("Code " + (counter + 1) + " erfüllt Auflagen, keine Aminosäure wird öfter als 3 mal codiert.");
+                    Console.WriteLine("Code " + (counter + 1) + " erfüllt Auflagen, keine Aminosäure wird öfter als 3 mal codiert.");
                 }
 
                 counter++;
@@ -61,6 +63,7 @@ namespace CodeChecker
 
             var vailidGraphCount = graphList.Where(x => x.Value != null).Count();
             outputLines.Append(vailidGraphCount + " Graphen sind valide.");
+            Console.WriteLine(vailidGraphCount + " Graphen sind valide.");
 
             TimeSpan minElapesedTime = TimeSpan.MaxValue;
             TimeSpan maxElapesedTime = TimeSpan.Zero;
@@ -81,25 +84,32 @@ namespace CodeChecker
 
                             minElapesedTime = (minElapesedTime < stopwatch.Elapsed) ? minElapesedTime : stopwatch.Elapsed;
                             maxElapesedTime = (maxElapesedTime > stopwatch.Elapsed) ? maxElapesedTime : stopwatch.Elapsed;
-                            overallElapesedTime += overallElapesedTime;
-                            stopwatch.Reset();
+                            overallElapesedTime += stopwatch.Elapsed;
 
                             if (result == true)
                             {
-                                outputLines.Add((j + 1) + " ist isomorph zu " + (i + 1) + "---------------------------------");
+                                outputLines.Add((j + 1) + " ist isomorph zu " + (i + 1) + " (" + stopwatch.Elapsed.TotalMilliseconds + " ms)");
+                                Console.WriteLine((j + 1) + " ist isomorph zu " + (i + 1) + " (" + stopwatch.Elapsed.TotalMilliseconds + " ms)");
                             }
                             else
                             {
-                                outputLines.Add((j + 1) + " ist nicht isomorph zu " + (i + 1));
+                                outputLines.Add((j + 1) + " ist nicht isomorph zu " + (i + 1) + " (" + stopwatch.Elapsed.TotalMilliseconds + " ms)");
+                                Console.WriteLine((j + 1) + " ist nicht isomorph zu " + (i + 1) + " (" + stopwatch.Elapsed.TotalMilliseconds + " ms)");
                             }
+
+                            stopwatch.Reset();
                         }
                     }
                 }
             }
 
-            outputLines.Add("Min. Berechnungszeit: " + minElapesedTime.TotalSeconds);
-            outputLines.Add("Max. Berechnungszeit: " + maxElapesedTime.TotalSeconds);
-            outputLines.Add("Avg. Berechnungszeit: " + overallElapesedTime.TotalSeconds / vailidGraphCount);
+            outputLines.Add("Min. Berechnungszeit: " + minElapesedTime.TotalMilliseconds + " ms.");
+            Console.WriteLine("Min. Berechnungszeit: " + minElapesedTime.TotalMilliseconds + " ms.");
+            outputLines.Add("Max. Berechnungszeit: " + maxElapesedTime.TotalMilliseconds + " ms.");
+            Console.WriteLine("Max. Berechnungszeit: " + maxElapesedTime.TotalMilliseconds + " ms.");
+            outputLines.Add("Avg. Berechnungszeit: " + overallElapesedTime.TotalMilliseconds / (vailidGraphCount * (vailidGraphCount - 1) / 2) + " ms.");
+            Console.WriteLine("Avg. Berechnungszeit: " + overallElapesedTime.TotalMilliseconds / (vailidGraphCount * (vailidGraphCount - 1) / 2) + " ms.");
+
             File.WriteAllLines("Output.txt", outputLines.ToArray());
             Console.WriteLine("done");
             Console.ReadLine();

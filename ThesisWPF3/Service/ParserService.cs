@@ -216,17 +216,17 @@ namespace ThesisWPF3.Service
                                     }
                                 }
 
-                                if (isEdge(graph1, j, k) != isEdge(graph2, i, l))
-                                {
-                                    if (graph1.Vertices.ElementAt(j).Color == graph2.Vertices.ElementAt(k).Color && graph1.Vertices.ElementAt(i).Color == graph2.Vertices.ElementAt(l).Color)
-                                    {
-                                        formula.Add(new Clause<string>
-                                        {
-                                            Literal.Of(graph1.Vertices.ElementAt(j).Description + "," + graph2.Vertices.ElementAt(k).Description).Negate(),
-                                            Literal.Of(graph1.Vertices.ElementAt(i).Description + "," + graph2.Vertices.ElementAt(l).Description).Negate()
-                                        });
-                                    }
-                                }
+                                //if (isEdge(graph1, j, k) != isEdge(graph2, i, l))
+                                //{
+                                //    if (graph1.Vertices.ElementAt(j).Color == graph2.Vertices.ElementAt(k).Color && graph1.Vertices.ElementAt(i).Color == graph2.Vertices.ElementAt(l).Color)
+                                //    {
+                                //        formula.Add(new Clause<string>
+                                //        {
+                                //            Literal.Of(graph1.Vertices.ElementAt(j).Description + "," + graph2.Vertices.ElementAt(k).Description).Negate(),
+                                //            Literal.Of(graph1.Vertices.ElementAt(i).Description + "," + graph2.Vertices.ElementAt(l).Description).Negate()
+                                //        });
+                                //    }
+                                //}
                             }
                         }
                     }
