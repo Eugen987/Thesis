@@ -51,7 +51,7 @@ namespace CodeChecker
                 }
                 else
                 {
-                   / graphList.Add(new KeyValuePair<int, Graph>(counter, graph));
+                    graphList.Add(new KeyValuePair<int, Graph>(counter, graph));
                     outputLines.Add("Code " + (counter + 1) + " erfüllt Auflagen, keine Aminosäure wird öfter als 3 mal codiert.");
                     Console.WriteLine("Code " + (counter + 1) + " erfüllt Auflagen, keine Aminosäure wird öfter als 3 mal codiert.");
                 }
