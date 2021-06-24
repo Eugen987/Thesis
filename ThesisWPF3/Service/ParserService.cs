@@ -158,7 +158,7 @@ namespace ThesisWPF3.Service
         {
             var formula = new Formula<string>();
 
-            //Type1
+            //Type1 Clauses
             foreach (Vertex vertexGraph1 in graph1.Vertices)
             {
                 var clause = new Clause<string>();
@@ -170,7 +170,7 @@ namespace ThesisWPF3.Service
                 formula.Add(clause);
             }
 
-            //Type2
+            //Type2 Clauses
             var size = graph1.Vertices.Count();
             for (int i = 0; i < size; i++)
             {
@@ -193,7 +193,7 @@ namespace ThesisWPF3.Service
                 }
             }
 
-            //Type3
+            //Type3 Clauses
             for (int j = 1; j < size; j++)
             {
                 for (int i = 0; i < j; i++)
@@ -215,18 +215,6 @@ namespace ThesisWPF3.Service
                                         });
                                     }
                                 }
-
-                                //if (isEdge(graph1, j, k) != isEdge(graph2, i, l))
-                                //{
-                                //    if (graph1.Vertices.ElementAt(j).Color == graph2.Vertices.ElementAt(k).Color && graph1.Vertices.ElementAt(i).Color == graph2.Vertices.ElementAt(l).Color)
-                                //    {
-                                //        formula.Add(new Clause<string>
-                                //        {
-                                //            Literal.Of(graph1.Vertices.ElementAt(j).Description + "," + graph2.Vertices.ElementAt(k).Description).Negate(),
-                                //            Literal.Of(graph1.Vertices.ElementAt(i).Description + "," + graph2.Vertices.ElementAt(l).Description).Negate()
-                                //        });
-                                //    }
-                                //}
                             }
                         }
                     }

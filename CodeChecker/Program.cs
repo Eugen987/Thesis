@@ -45,7 +45,8 @@ namespace CodeChecker
                         outputLine += acid.AcidShort + " (" + acid.Count + ")  ";
                     }
                     outputLine += "wird/werden zu häufig codiert.";
-                    graphList.Add(new KeyValuePair<int, Graph>(counter, null));
+                    //graphList.Add(new KeyValuePair<int, Graph>(counter, null));
+                    graphList.Add(new KeyValuePair<int, Graph>(counter, graph));
                     outputLines.Add(outputLine);
                     Console.WriteLine(outputLine);
                 }
